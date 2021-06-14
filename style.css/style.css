@@ -42,7 +42,8 @@ body {
     font-family: 'Bebas', sans-serif;
 }
 
-a { color: #fff;
+a {
+    color: #fff;
     text-decoration: none;
     display: inline-block;
 }
@@ -102,6 +103,10 @@ ul {
     color: #e8663c;
 }
 
+.header__menu-btn {
+    width: 50p;
+}
+
 .header {
     position: relative;
     width: 100%;
@@ -137,7 +142,7 @@ ul {
 }
 
 .thumbs__item {
-    width: 155px;
+    width: 140px;
     height: 120px;
     background-position: center;
     background-size: cover;
@@ -145,11 +150,14 @@ ul {
 }
 
 .thumbs .slick-slide {
-    max-width: 140px;
+   max-width: 140px; 
 }
-
+.thumbs .slick-track{
+    transform: translate3d(0px, 0px, 0px) !important;
+}
 .thumbs .slick-track div+div {
-    margin-left: 40px;
+    margin-left: 20px;
+    
 }
 
 .slider {
@@ -216,7 +224,7 @@ ul {
 
 .item {
     width: 290px;
-    height: 255px;
+    min-height: 255px;
 }
 
 .item__title {
@@ -228,10 +236,12 @@ ul {
 
 }
 
-.item__text {
+.item__text{
     color: #717171;
     font-size: 12px;
+    line-height: 18px;
     font-weight: 400;
+    font-family: 'HelveticaNeue';
 }
 
 .item__title-logo {
@@ -255,11 +265,23 @@ ul {
 
 }
 
+.morecontent span {
+    overflow: hidden;
+    display: none;
+}
 
-.item__btn  {
+a.morelink {
+    font-family: 'Bebas', sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    width: 56px;
+    height: 32px;
+    display: block;
     margin-top: 20px;
-    border: none;
-    padding: 10px 15px 10px 15px;
+    margin-bottom:40px ;
+    color: #000;
+    text-align: center;
+    padding: 4px;
     color: #fff;
     font-size: 12px;
     background-color: #e8663c;
@@ -276,6 +298,7 @@ ul {
 .works__title-line {
     width: 807px;
     height: 19px;
+    background-color: #f0f0f0;
     position: absolute;
     right: 0;
 }
@@ -403,7 +426,7 @@ ul {
     color: #fff;
 }
 
-.social__list li + li {
+.social__list li+li {
     margin-top: 20px;
     margin-left: 5px;
 }
