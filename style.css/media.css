@@ -1,4 +1,102 @@
-@media (max-width: 800px){
+@media (max-width: 600px) {
+    .header__menu-btn {
+        position: absolute;
+        top: -50px;
+        right: 15px;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+        cursor: pointer;
+        margin-right: 0;
+    }
+    .row-item {
+        padding-top: 4px;
+    }
+    .header__menu_list{
+        display: none;
+        background-color: #b9b9b9;
+    }
+    .header__menu_list a {
+        display: block;
+        padding: 34px;
+    }
+
+    .header__menu_list li {
+        text-align: center;
+    }
+    .header__inner{
+        position: relative;
+    }
+    .header__menu{
+        position: absolute;
+        margin-top: 30px;
+        top: 50px;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    .header__menu_list li+li{
+        border-top: 1px solid #fff;
+        margin-left: 0px;
+    }
+    .header__menu_item{
+        
+        margin: 0;
+        display: block;
+    }
+    .header__menu_item span{
+        color: #fff;
+    }
+    .header__menu_item span:hover{
+        color: #fff;
+    }
+    .header__menu_item a:hover{
+        color: #fff;
+    }
+    .header__menu_item a{
+        color: #fff;
+    }
+    .header__menu_item:hover{
+        background: #e8663c;
+    }
+    .row-item.active{
+        display: none;
+    }
+    .slider .slick-prev {
+        z-index: -1;
+    }
+    .slider .slick-next{
+        z-index: -1;
+    }
+}
+@media (max-width: 480px) {
+    .slider__content{
+        left: 0;
+        background-color: rgba(192, 110, 61, 0.3);
+        position: static;
+        font-size: 50px;
+        width: auto;
+        height: auto;
+        padding: 10px;
+    }
+    .slider__title {
+        padding-left: 0;
+        width: auto;
+        font-size: 70px;
+        padding-top: 10px;
+    }
+    
+    .slider__text {
+        font-family: 'HelveticaNeue', sans-serif;
+        font-size: 15px;
+        padding: 0;
+    }
     
 }
-    
+@media (min-width: 600px){
+    .header__menu_list{
+        display: block !important;
+    }
+}

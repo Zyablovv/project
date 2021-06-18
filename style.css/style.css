@@ -83,10 +83,6 @@ ul {
     color: #b9b9b9;
 }
 
-.header__menu_list>li {
-    transition: all 5s;
-}
-
 .header__menu_list>li :hover {
     color: #e8663c;
 }
@@ -102,11 +98,17 @@ ul {
 .header__menu_item span {
     color: #e8663c;
 }
-
 .header__menu-btn {
-    width: 50p;
+    width: 30px;
+    cursor: pointer;
+    display: none;
 }
-
+.row-item{
+    padding-top: 4px;
+}
+.row-clouse{
+    display: none;
+}
 .header {
     position: relative;
     width: 100%;

@@ -14,6 +14,18 @@ $(function () {
         arrows: false,
         focusOnSelect: true,
     }); 
+
+	$('.header__menu-btn').on('click',function(){
+		$('.header__menu_list').slideToggle();
+	});
+	$('.header__menu-btn').on('click',function(){
+		$('.row-clouse').slideToggle(.1);
+	});
+	$('.header__menu-btn').on('click',function(){
+		$('.row-item').toggleClass('active');
+	});
+	
+
     var showChar = 600;
 	var ellipsestext = "...";
 	var moretext = "more";
